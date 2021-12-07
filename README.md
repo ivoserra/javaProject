@@ -4,7 +4,9 @@
 
 user or Castle is a project that I started to develop as the final project of programing fundamentals from DCI - digital career Institute in Berlin, Germany. 
 
-My first idea was to develop a story telling game: a book that has a dramaturgy that the reader interacts with. This project was developed until the end of the castle. Cities have not been developed neither Inter-activities like challenges with other characters, or users. My wish is one day to translate this project to DOM language and to further develop into the game world. 
+My first idea was to develop a story-game: a kind of book that has a dramaturgy that the reader interacts with. This project was developed until the end of the castle. 
+
+Cities have not been developed neither Inter-activities like challenges with other characters, or users. My wish is one day to translate this project to DOM language and to further develop into the game world. 
 
 If you want to see more about other project:
 
