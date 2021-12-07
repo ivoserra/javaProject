@@ -1,85 +1,41 @@
-# Pokemon Lite
+# * USER or CASTLE 
+### *title still in process
+## game developer project 
 
-Try to make a simplified version of pokemon!
+user or Castle is a project that I started to develop as the final project of programing fundamentals from my previous class. My first idea was to develop a story telling game: a book that has a dramaturgy that the reader interacts with. This project was developed until the end of the castle. Cities have not been developed neither Inter-activities like challenges with other characters, or users. My wish is one day to translate this project to DOM language and to further develop into the game world. 
 
-Create a new index.js file.
+If you want to see more about this project:
 
-## Functionality:
+[Ivo Serra github repository](https://github.com/ivoserra/javaProject).
 
-* You should have a Pokemon constructor function that creates new pokemon that have name, health, magic and a bunch of skills (the skills can be stored in an array or object).
-* You should have an AttackSkill constructor function for creating new attacks. Attacks consumes the pokemon's magic to cause damage to other pokemons. Each individual pokemon has a specific set of attacks. The AttackSkill method should take in three arguments: the name of the attack, the amount of damage the attack does, and the amount of magic the attack requires. For example, here we're creating a 'lightning' attack skill that causes 40 damage, and requires 30 magic: 
-```javascript
-let lightning = new AttackSkill("lightning", 40, 30);
-```
-These numbers don't have to be correct or correspond to the real Pokemon numbers at all - you can just make them up.
-* A pokemon has no skills when created. It has to use the method learnAttackSkill to learn a new skill. learnAttackSkill should take an attack object as an argument. The specific attacks should be created using the attackSkill constructor function, and then internally added to that Pokemon's 'skills' array. Here is an example of first creating a skill, then adding it to a Pokemon: 
-```javascript
-let lightning = new AttackSkill("lightning", 40, 30); 
-pikachu.learnAttackSkill(lightning);
-```
-* Your pokemon should have a method called showStatus that console.logs its status (how much health, magic left)
-* Your pokemon should have a method called attack which picks one of the pokemon's attack skills to attack another pokemon. This is its most important method! Consider all the possiblites in this method. (e.g what if the pokemon doesn't have enough magic to launch the attack skill?). The attack method should call one of the Pokemon's attack and apply it to the other Pokemon. So for example, if you call the 'lightning' attack (which we created above), it should deal 40 damage to the other Pokemon, and deplete 30 magic from the Pokemon that commited the attack. The attack method should additionally console.log out whether the attack was successful (in other words, whether the attacking pokemon had enough magic to actually carry out the attack), and the result of the attack. The attack method should take in two arguments: the index (or key) of the attack to be used, and the Pokemon object that needs to be attacked. For example, here is an attack being called from Pikachu to Bulbasaur: 
-```javascript
-pikachu.attack(0, bulbasaur);
-```
-* Finally create a method called getMagic to help your pokemon add some magic back to your Pokemon (you can choose exactly how much magic should be added back).
-* You should create a constructor function to create a pokemon, and then add the methods onto the .prototype property of the constructor function. You should then use that constructor function to create all new pokemon.
+## the story
+User or Castle is a story game where the consumer takes decisions through multiple choices developing different outcomes or dramaturgies. The goal of this game is that the user is able to return to the castle and can sum up all what he could gather from is adventures. If the sum is higher then expected the user will have access to the throne room and clammed as a hero within a multitude of heros of the Castle.
 
-* Similarly, you should have a constructor function to create an attackSkill
+## the code-story
 
-For example, the following sequence:
+For this project I have developed 2 classes , one of the classes needs to assign into the other class methods.
+In every every assignment there is a automatic message on the node Terminal , where one can read the story and directions. 
 
-```javascript
-//Each Pokemon should start with a certain amount of health and magic. For example, here Pikachu starts with 120 health and 80 magic 
-let pikachu = new Pokemon("pikachu", 120, 80);
-let bulbasaur = new Pokemon("bulbasaur", 95, 105);
 
-//Each skill should do a certain amount of damage, and consume a certain amount of magic from the Pokemon that used the skill.
-let lightning = new AttackSkill("lightning", 40, 30);
-let poisonSeed = new AttackSkill ("poison seed", 20, 20);
-pikachu.learnAttackSkill(lightning);
-bulbasaur.learnAttackSkill(poisonSeed);
+<br>
 
-//The first argument to `attack` should be the index (or key) of the attack
-pikachu.attack(0, bulbasaur);
-bulbasaur.attack(0, pikachu);
-pikachu.showStatus();
-bulbasaur.showStatus();
-pikachu.attack(0, bulbasaur);
-pikachu.attack(0, bulbasaur);
-pikachu.getMagic();
-pikachu.attack(0, bulbasaur);
-bulbasaur.attack(0, pikachu);
+## Castle 
+<img src ="./USERproject/castle.webp">
+<br></br>
+The Castle is a secret place where all users arrive before they are assigned their avatar identities so they can proceed into their journeys and missions. 
+In the castle the user has to go through several rooms, each room has conditions to which the user has go through so he can earn and gather properties, values, energy, etc... that will help on its mission. when the user gets all the necessary attributes, he then creates an avatar and assigns it to a mission to which e needs to go too.  
+<br></br>
 
-// should log out the following to the console:
+## Cities
+<img src="./USERproject/cities.jpg">
+<br></br>
 
-// pikachu launched skill 'lightning' successfully!
-// bulbasaur got 40 damage
--------------------
-// bulbasaur launched skill 'poison seed' successfully!
-// pikachu got 20 damage
--------------------
-// pikachu status
-// health: 100
-// magic: 50
--------------------
-// bulbasaur status
-// health: 55
-// magic: 85
--------------------
-// pikachu launched skill 'lightning' successfully!
-// bulbasaur got 40 damage
--------------------
-// not enough magic, cannot launch attack!
--------------------
-// pikachu got 20 magic back
--------------------
-// pikachu launched skill 'lightning' successfully!
-// bulbasaur got 40 damage
--------------------
-// bulbasaur is killed!
--------------------
-// bulbasaur is already dead!
-// That's just one example. You can call different series of attacks to get different results!
-```
-## Bonus: Add some more Pokemon and attack types. 
+Cities are locations on a Multi-diverse universe.
+To be able to arrive to each city the user must have an avatar and hide is true-identity. The castle  should never be revealed to no one.
+Cities are challenging places, for example, users can challenge other users for whatever challenge might be designed by its location within the city. In every location the User can get more properties and points but he can also loose them even being deported from the city or erased from the story.
+
+## Initial game structure 
+<img src="./USERproject/userFirst.png">
+<br></br>
+
+### Images used for this project are from the artist woodkid to which I have as a bigger reference, not only for its visual but for his music and art.
